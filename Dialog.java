@@ -1,14 +1,12 @@
 import javax.swing.*;
 public class Dialog {
 
-	/** Skapar ett Dialog-objekt för hantering av popup-dialogrutor. */
+	/** Creates a Dialog object for handling popup dialog boxes. */
 	public Dialog() {
 	}
 
-	/** Visar en dialogruta med hjälptexten s där användaren skall mata in ett 
-	  * heltal som returneras.
-	  * Om användaren anger ett felaktigt värde eller klickar på "avbryt" så 
-	  * returneras Integer.MAX_VALUE.
+	/** Displays a dialog box with help text where the user should enter an integer that'll be returned.
+	  * If the user gives an incorrect value or clicks on "cancel" Integer.MAX_VALUE will be returned.
 	  */
 	public int readInt(String s) {
 		String in = JOptionPane.showInputDialog(s);
@@ -20,9 +18,8 @@ public class Dialog {
 		}
 	}
 
-	/** Visar en dialogruta med hjälptexten s där användaren skall mata in en 
-	  * teckensträng som returneras.
-	  * Om användaren klickar på "avbryt" så returneras null.
+	/** Displays a dialog box with help text where the user should enter a string that'll be returned .
+	  * If the user clicks on cancel null value will be returned.
 	  */
 	public String readString(String s) {
 		String in = JOptionPane.showInputDialog(s);
@@ -33,7 +30,7 @@ public class Dialog {
 		}
 	}
 
-	/** Visar en dialogruta med textsträngen s. */
+	/** Shows a dialog box with string text s. */
 	public void printString(String s) {
 	   JOptionPane.showMessageDialog(null, s, "",JOptionPane.PLAIN_MESSAGE);
 	}
