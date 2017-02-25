@@ -1,20 +1,20 @@
 public class Book {
-	private String title; // titel
-	 private String author; // författare
-	 /** Skapar en bok med författaren author och titeln title */
+	private String title; 
+	 private String author;
+	 /** Creates a book with author and title */
 	 public Book(String author, String title) {
 	 this.author = author;
 	 this.title = title;
 	 }
-	 /** Returnerar namnet på författaren */
+	 /** returns the name of the author */
 	 public String getAuthor() {
 	 return author;
 	 }
-	 /** Returnerar titeln */
+	 /** returns the title */
 	 public String getTitle() {
 	 return title;
 	 }
-	 /** Returnerar en sträng som består av bokens författare och titel */
+	 /** Returns a string of both author and title */
 	 public String toString() {
 	 return author + "\t" + title;
 	 }
